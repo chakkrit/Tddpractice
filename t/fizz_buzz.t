@@ -1,6 +1,6 @@
 use warnings;
 use strict;
-use Test::More tests => 4;
+use Test::More tests => 5;
 
 =head1 NAME
 
@@ -37,3 +37,11 @@ is(FizzBuzz::fizz_buzz(5), "Buzz", "the module gets 5 then it must returns Buzz"
 =cut
 
 is(FizzBuzz::fizz_buzz(15), "FizzBuzz", "the module gets 15 then it must returns FizzBuzz");
+
+=head2 DETAIL
+
+5. Check for the function take number that is not multiple of three or Five the it function must return the number back 
+
+=cut
+
+is(FizzBuzz::fizz_buzz(1), "1", "the module gets 1 then it must returns 1");
