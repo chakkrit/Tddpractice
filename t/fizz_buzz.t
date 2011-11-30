@@ -1,6 +1,6 @@
 use warnings;
 use strict;
-use Test::More;
+use Test::More tests => 1;
 
 =head1 NAME
 
