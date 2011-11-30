@@ -29,3 +29,11 @@ is(FizzBuzz::fizz_buzz(3), "Fizz", "the module gets 3 then it must returns Fizz"
 =cut
 
 is(FizzBuzz::fizz_buzz(5), "Buzz", "the module gets 5 then it must returns Buzz");
+
+=head2 DETAIL
+
+4. Check for the function take number that is multiple of Three and Five then it function must return "FizzBuzz" word
+
+=cut
+
+is(FizzBuzz::fizz_buzz(15), "FizzBuzz", "the module gets 15 then it must returns FizzBuzz");
