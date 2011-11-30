@@ -1,6 +1,6 @@
 use warnings;
 use strict;
-use Test::More tests => 2;
+use Test::More tests => 3;
 
 =head1 NAME
 
@@ -21,3 +21,11 @@ use ok 'FizzBuzz';
 =cut
 
 is(FizzBuzz::fizz_buzz(3), "Fizz", "the module gets 3 then it must returns Fizz");
+
+=head2 DETAIL
+
+3. Check for the function take number that is multiple of Five then it fuction must return "Buzz" word
+
+=cut
+
+is(FizzBuzz::fizz_buzz(5), "Buzz", "the module gets 5 then it must returns Buzz");
