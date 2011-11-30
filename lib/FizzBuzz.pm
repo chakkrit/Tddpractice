@@ -15,11 +15,11 @@ sub fizz_buzz {
 
   if (($number%3) == 0) {
     $text = "Fizz";
-  } elsif (($number%5) == 0) {
-    $text = "Buzz";
-  } else { 
-  return $text;
+  } 
+  if (($number%5) == 0) {
+    $text .= "Buzz";
   }
+  return $text;
 }
 
 1;
