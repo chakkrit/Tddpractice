@@ -13,11 +13,11 @@ sub fizz_buzz {
   my ($number) = @_;
   my $text = "";
 
-  if (($number%3) == 0) {
-    $text = "Fizz";
-  } 
-  if (($number%5) == 0) {
-    $text .= "Buzz";
+  if ((($number%3)==0) or (($number%5)==0)) {
+    $text = "Fizz" unless $number%3;
+    $text .="Buzz" unless $number%5;
+  } else {
+    $text = $number;
   }
   return $text;
 }
